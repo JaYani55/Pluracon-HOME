@@ -1,0 +1,67 @@
+{
+	"slug": "sample-product",
+	"title": "Sample Product",
+	"published": true,
+	"publishedAt": "2025-01-15T10:00:00Z",
+	"updatedAt": "2025-01-15T10:00:00Z",
+	"hero": {
+		"title": "Sample Product Title",
+		"subtitle": "Transform Your Experience",
+		"description": "This is a sample product demonstrating the new SvelteKit ISR architecture with Svelte 5.",
+		"image": "/images/sample-product-hero.jpg",
+		"ctaText": "Get Started",
+		"ctaLink": "/contact"
+	},
+	"features": [
+		{
+			"id": "feature-1",
+			"title": "Feature One",
+			"description": "Description of the first amazing feature that makes this product stand out.",
+			"icon": "🚀"
+		},
+		{
+			"id": "feature-2",
+			"title": "Feature Two",
+			"description": "Another compelling feature that provides value to your users.",
+			"icon": "⚡"
+		},
+		{
+			"id": "feature-3",
+			"title": "Feature Three",
+			"description": "A third feature that completes the perfect trifecta of benefits.",
+			"icon": "🎯"
+		}
+	],
+	"cards": [
+		{
+			"id": "card-1",
+			"title": "Use Case One",
+			"description": "How customers use this product in real-world scenarios.",
+			"image": "/images/use-case-1.jpg"
+		},
+		{
+			"id": "card-2",
+			"title": "Use Case Two",
+			"description": "Another practical application of the product.",
+			"image": "/images/use-case-2.jpg"
+		}
+	],
+	"faq": [
+		{
+			"id": "faq-1",
+			"question": "What is this product?",
+			"answer": "This product is designed to solve specific problems and provide value to users through its unique features."
+		},
+		{
+			"id": "faq-2",
+			"question": "How does it work?",
+			"answer": "The product works by leveraging modern technology and best practices to deliver exceptional results."
+		}
+	],
+	"cta": {
+		"title": "Ready to Get Started?",
+		"description": "Join thousands of satisfied customers today.",
+		"buttonText": "Contact Us",
+		"buttonLink": "/contact"
+	}
+}
