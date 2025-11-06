@@ -13,20 +13,22 @@
 
 <div class="min-h-screen bg-background">
 	<!-- Product Hero Section -->
-	<section class="py-20 px-6">
+	<section class="py-20 px-6 bg-accent border-b-4 border-black">
 		<div class="container mx-auto max-w-6xl">
 			<div class="text-center">
 				{#if product.hero.subtitle}
-					<p class="text-primary font-semibold mb-4">{product.hero.subtitle}</p>
+					<div class="inline-block border-4 border-black bg-white px-4 py-2 mb-6">
+						<p class="text-primary font-black uppercase text-sm">{product.hero.subtitle}</p>
+					</div>
 				{/if}
-				<h1 class="text-5xl md:text-6xl font-bold mb-6">{product.hero.title}</h1>
-				<p class="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+				<h1 class="text-5xl md:text-6xl font-black mb-6 text-white uppercase">{product.hero.title}</h1>
+				<p class="text-xl font-bold text-white max-w-3xl mx-auto mb-8">
 					{product.hero.description}
 				</p>
 				{#if product.hero.ctaText && product.hero.ctaLink}
 					<a
 						href={product.hero.ctaLink}
-						class="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+						class="neo-button bg-primary text-white px-8 py-3 font-black uppercase inline-block"
 					>
 						{product.hero.ctaText}
 					</a>
@@ -34,28 +36,32 @@
 			</div>
 			{#if product.hero.image}
 				<div class="mt-12">
-					<img
-						src={product.hero.image}
-						alt={product.hero.title}
-						class="w-full rounded-xl shadow-2xl"
-					/>
+					<div class="neo-border neo-shadow-lg overflow-hidden bg-white">
+						<img
+							src={product.hero.image}
+							alt={product.hero.title}
+							class="w-full"
+						/>
+					</div>
 				</div>
 			{/if}
 		</div>
 	</section>
 
 	<!-- Features Section -->
-	<section class="py-20 px-6 bg-muted/50">
+	<section class="py-20 px-6 bg-white">
 		<div class="container mx-auto max-w-6xl">
-			<h2 class="text-4xl font-bold text-center mb-12">Features</h2>
+			<div class="border-4 border-black bg-primary text-white p-2 inline-block mb-12">
+				<h2 class="text-4xl font-black uppercase px-4 py-2">Features</h2>
+			</div>
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 				{#each product.features as feature (feature.id)}
-					<div class="bg-background p-6 rounded-lg shadow-sm">
+					<div class="neo-card bg-white p-6">
 						{#if feature.icon}
 							<div class="text-4xl mb-4">{feature.icon}</div>
 						{/if}
-						<h3 class="text-2xl font-semibold mb-3">{feature.title}</h3>
-						<p class="text-muted-foreground">{feature.description}</p>
+						<h3 class="text-2xl font-black mb-3 uppercase">{feature.title}</h3>
+						<p class="font-medium">{feature.description}</p>
 					</div>
 				{/each}
 			</div>
@@ -64,18 +70,22 @@
 
 	<!-- Cards Section -->
 	{#if product.cards && product.cards.length > 0}
-		<section class="py-20 px-6">
+		<section class="py-20 px-6 bg-secondary">
 			<div class="container mx-auto max-w-6xl">
-				<h2 class="text-4xl font-bold text-center mb-12">Use Cases</h2>
+				<div class="border-4 border-black bg-white p-2 inline-block mb-12">
+					<h2 class="text-4xl font-black uppercase px-4 py-2">Use Cases</h2>
+				</div>
 				<div class="grid md:grid-cols-2 gap-8">
 					{#each product.cards as card (card.id)}
-						<div class="rounded-lg overflow-hidden shadow-lg">
+						<div class="neo-card bg-white overflow-hidden">
 							{#if card.image}
-								<img src={card.image} alt={card.title} class="w-full h-64 object-cover" />
+								<div class="border-b-4 border-black">
+									<img src={card.image} alt={card.title} class="w-full h-64 object-cover" />
+								</div>
 							{/if}
 							<div class="p-6">
-								<h3 class="text-2xl font-semibold mb-3">{card.title}</h3>
-								<p class="text-muted-foreground">{card.description}</p>
+								<h3 class="text-2xl font-black mb-3 uppercase">{card.title}</h3>
+								<p class="font-medium">{card.description}</p>
 							</div>
 						</div>
 					{/each}
@@ -86,14 +96,16 @@
 
 	<!-- FAQ Section -->
 	{#if product.faq && product.faq.length > 0}
-		<section class="py-20 px-6 bg-muted/50">
+		<section class="py-20 px-6 bg-white">
 			<div class="container mx-auto max-w-4xl">
-				<h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+				<div class="border-4 border-black bg-accent text-white p-2 inline-block mb-12">
+					<h2 class="text-4xl font-black uppercase px-4 py-2">Frequently Asked Questions</h2>
+				</div>
 				<div class="space-y-6">
 					{#each product.faq as faqItem (faqItem.id)}
-						<div class="bg-background p-6 rounded-lg shadow-sm">
-							<h3 class="text-xl font-semibold mb-3">{faqItem.question}</h3>
-							<p class="text-muted-foreground">{faqItem.answer}</p>
+						<div class="neo-card bg-white p-6">
+							<h3 class="text-xl font-black mb-3 uppercase">{faqItem.question}</h3>
+							<p class="font-medium">{faqItem.answer}</p>
 						</div>
 					{/each}
 				</div>
@@ -102,13 +114,13 @@
 	{/if}
 
 	<!-- CTA Section -->
-	<section class="py-20 px-6">
+	<section class="py-20 px-6 bg-primary border-t-4 border-black">
 		<div class="container mx-auto max-w-4xl text-center">
-			<h2 class="text-4xl font-bold mb-6">{product.cta.title}</h2>
-			<p class="text-xl text-muted-foreground mb-8">{product.cta.description}</p>
+			<h2 class="text-4xl font-black mb-6 text-white uppercase">{product.cta.title}</h2>
+			<p class="text-xl font-bold text-white mb-8">{product.cta.description}</p>
 			<a
 				href={product.cta.buttonLink}
-				class="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+				class="neo-button bg-secondary text-black px-8 py-3 font-black uppercase inline-block"
 			>
 				{product.cta.buttonText}
 			</a>

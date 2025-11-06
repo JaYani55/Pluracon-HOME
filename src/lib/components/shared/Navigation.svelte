@@ -4,7 +4,7 @@
 
 <a
 	{href}
-	class="text-foreground/80 hover:text-primary transition-colors font-medium"
+	class="text-black hover:text-primary transition-colors font-bold uppercase text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-primary after:transition-all hover:after:w-full"
 >
 	{@render children?.()}
 </a>
