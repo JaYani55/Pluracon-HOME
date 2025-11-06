@@ -1,8 +1,12 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { currentLanguage, t } from '$lib/stores/language';
 
 	let { data }: { data: PageData } = $props();
 	const { posts } = data;
+
+	let lang = $derived($currentLanguage);
+	let translations = $derived(t(lang));
 </script>
 
 <svelte:head>
@@ -15,10 +19,10 @@
 	<section class="py-16 px-6 bg-primary border-b-4 border-black">
 		<div class="container mx-auto max-w-6xl">
 			<div class="border-4 border-black bg-white p-2 inline-block">
-				<h1 class="text-5xl md:text-6xl font-black uppercase px-4 py-2">Blog</h1>
+				<h1 class="text-5xl md:text-6xl font-black uppercase px-4 py-2">{translations.blog.title}</h1>
 			</div>
 			<p class="text-xl font-bold text-white mt-6 max-w-3xl">
-				Insights, stories, and updates from our team
+				{translations.blog.description}
 			</p>
 		</div>
 	</section>
@@ -70,7 +74,7 @@
 								</div>
 								
 								{#if post.readingTime}
-									<span class="bg-secondary px-2 py-1 border-2 border-black">{post.readingTime} min</span>
+									<span class="bg-secondary px-2 py-1 border-2 border-black">{post.readingTime} {translations.blog.minRead}</span>
 								{/if}
 							</div>
 						</div>
@@ -82,7 +86,7 @@
 				<div class="text-center py-12">
 					<div class="neo-card bg-secondary p-12 max-w-md mx-auto">
 						<span class="text-6xl block mb-4">📭</span>
-						<p class="text-xl font-black uppercase">No blog posts available at the moment.</p>
+						<p class="text-xl font-black uppercase">{translations.blog.noPosts}</p>
 					</div>
 				</div>
 			{/if}

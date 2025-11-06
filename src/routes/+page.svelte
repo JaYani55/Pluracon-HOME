@@ -1,3 +1,10 @@
+<script lang="ts">
+	import { currentLanguage, t } from '$lib/stores/language';
+
+	let lang = $derived($currentLanguage);
+	let translations = $derived(t(lang));
+</script>
+
 <svelte:head>
 	<title>Pluracon - Building Inclusive Solutions</title>
 	<meta name="description" content="Discover innovative products and insights for building inclusive and accessible solutions." />
@@ -11,29 +18,29 @@
 				<!-- Left: Text Content -->
 				<div>
 					<h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-						<span class="text-primary">Innovate.</span>
-						<span class="text-accent"> Include.</span>
+						<span class="text-primary">{translations.home.hero.innovate}</span>
+						<span class="text-accent"> {translations.home.hero.include}</span>
 						<br />
-						<span class="text-foreground">Empower</span>
+						<span class="text-foreground">{translations.home.hero.empower}</span>
 					</h1>
 					<p class="text-xl md:text-2xl font-bold mb-8 leading-relaxed">
-						Solutions for a Connected World
+						{translations.home.hero.subtitle}
 					</p>
 					<p class="text-lg mb-12 font-medium text-muted-foreground">
-						We build accessible, cutting-edge technology that brings fostering understanding and progress.
+						{translations.home.hero.description}
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4">
 						<a
 							href="/products"
 							class="neo-button bg-primary text-white px-8 py-4 font-black text-lg uppercase text-center"
 						>
-							Explore Platforms
+							{translations.home.hero.explorePlatforms}
 						</a>
 						<a
 							href="/blog"
 							class="neo-button bg-secondary text-black px-8 py-4 font-black text-lg uppercase text-center"
 						>
-							Read Our Story
+							{translations.home.hero.readStory}
 						</a>
 					</div>
 				</div>
@@ -55,7 +62,7 @@
 	<section class="py-16 px-6 bg-accent">
 		<div class="container mx-auto max-w-6xl">
 			<div class="border-4 border-black bg-white p-2 inline-block mb-12">
-				<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">Featured Products</h2>
+				<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">{translations.home.featuredProducts.title}</h2>
 			</div>
 
 			<div class="grid md:grid-cols-3 gap-8">
@@ -66,12 +73,11 @@
 					</div>
 					<div class="p-6">
 						<div class="border-4 border-black bg-secondary inline-block px-3 py-1 mb-3">
-							<span class="font-black text-sm uppercase">AccessAI</span>
+							<span class="font-black text-sm uppercase">{translations.home.featuredProducts.accessAI}</span>
 						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase">CommuniLink</h3>
+						<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.featuredProducts.communiLink}</h3>
 						<p class="font-medium mb-4">
-							Fostering true dialogue through powerful AI-powered technology that
-							listens till the user voice count.
+							{translations.home.featuredProducts.description1}
 						</p>
 					</div>
 				</div>
@@ -83,12 +89,11 @@
 					</div>
 					<div class="p-6">
 						<div class="border-4 border-black bg-primary text-white inline-block px-3 py-1 mb-3">
-							<span class="font-black text-sm uppercase">AccessAI</span>
+							<span class="font-black text-sm uppercase">{translations.home.featuredProducts.accessAI}</span>
 						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase">CommuniLink</h3>
+						<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.featuredProducts.communiLink}</h3>
 						<p class="font-medium mb-4">
-							Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-							eiusmod tempor incididunt ut.
+							{translations.home.featuredProducts.description2}
 						</p>
 					</div>
 				</div>
@@ -100,11 +105,11 @@
 					</div>
 					<div class="p-6">
 						<div class="border-4 border-black bg-accent text-white inline-block px-3 py-1 mb-3">
-							<span class="font-black text-sm uppercase">Coming Soon</span>
+							<span class="font-black text-sm uppercase">{translations.home.featuredProducts.comingSoon}</span>
 						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase">More Products</h3>
+						<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.featuredProducts.moreProducts}</h3>
 						<p class="font-medium mb-4">
-							We're constantly developing new products to meet your needs and expand possibilities.
+							{translations.home.featuredProducts.moreDescription}
 						</p>
 					</div>
 				</div>
@@ -121,34 +126,34 @@
 	<section class="py-16 px-6 bg-white">
 		<div class="container mx-auto max-w-6xl">
 			<div class="border-4 border-black bg-primary text-white p-2 inline-block mb-12">
-				<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">Our Mission</h2>
+				<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">{translations.home.mission.title}</h2>
 			</div>
 
 			<div class="grid md:grid-cols-3 gap-8">
 				<!-- Mission 1 -->
 				<div class="neo-card bg-secondary p-8">
 					<div class="text-5xl mb-4">🌍</div>
-					<h3 class="text-2xl font-black mb-3 uppercase">Inclusive by Design</h3>
+					<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.mission.inclusive}</h3>
 					<p class="font-medium">
-						Every product we create is built with accessibility and inclusion at its core, ensuring no one is left behind.
+						{translations.home.mission.inclusiveDesc}
 					</p>
 				</div>
 
 				<!-- Mission 2 -->
 				<div class="neo-card bg-white p-8">
 					<div class="text-5xl mb-4">⚡</div>
-					<h3 class="text-2xl font-black mb-3 uppercase">Fast & Modern</h3>
+					<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.mission.fast}</h3>
 					<p class="font-medium">
-						Built with cutting-edge technology like SvelteKit and Svelte 5, delivering exceptional performance.
+						{translations.home.mission.fastDesc}
 					</p>
 				</div>
 
 				<!-- Mission 3 -->
 				<div class="neo-card bg-accent text-white p-8">
 					<div class="text-5xl mb-4">🚀</div>
-					<h3 class="text-2xl font-black mb-3 uppercase">Scalable Solutions</h3>
+					<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.mission.scalable}</h3>
 					<p class="font-medium">
-						Our products grow with your needs, from small projects to enterprise-level implementations.
+						{translations.home.mission.scalableDesc}
 					</p>
 				</div>
 			</div>
@@ -162,13 +167,13 @@
 		<div class="container mx-auto max-w-6xl">
 			<div class="flex items-center justify-between mb-12 flex-wrap gap-4">
 				<div class="border-4 border-black bg-white p-2">
-					<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">Latest Insights</h2>
+					<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">{translations.home.blog.title}</h2>
 				</div>
 				<a
 					href="/blog"
 					class="neo-button bg-secondary text-black px-6 py-3 font-black uppercase text-sm"
 				>
-					View all →
+					{translations.home.blog.viewAll}
 				</a>
 			</div>
 
@@ -180,24 +185,24 @@
 					<div class="md:w-1/2 p-8">
 						<div class="mb-4">
 							<span class="inline-block border-4 border-black bg-accent text-white px-4 py-2 font-black uppercase text-sm">
-								Tutorial
+								{translations.home.blog.tutorial}
 							</span>
 						</div>
 						<h3 class="text-3xl font-black mb-4 uppercase">
 							<a href="/blog/sample-blog-post" class="hover:text-primary transition-colors">
-								Getting Started with SvelteKit ISR
+								{translations.home.blog.blogTitle}
 							</a>
 						</h3>
 						<p class="font-medium mb-6">
-							Learn how to implement Incremental Static Regeneration in SvelteKit with Svelte 5 for optimal performance.
+							{translations.home.blog.blogDesc}
 						</p>
 						<div class="flex items-center justify-between">
-							<span class="text-sm font-bold">8 min read</span>
+							<span class="text-sm font-bold">8 {translations.home.blog.minRead}</span>
 							<a
 								href="/blog/sample-blog-post"
 								class="neo-button bg-primary text-white px-6 py-2 font-black uppercase text-sm"
 							>
-								Read article →
+								{translations.home.blog.readArticle}
 							</a>
 						</div>
 					</div>
@@ -210,23 +215,23 @@
 	<section class="py-16 px-6 bg-white border-y-4 border-black">
 		<div class="container mx-auto max-w-4xl text-center">
 			<h2 class="text-4xl md:text-6xl font-black mb-6 uppercase">
-				Ready to Get Started?
+				{translations.home.cta.title}
 			</h2>
 			<p class="text-xl font-bold mb-12">
-				Explore our products or get in touch to learn how we can help you build inclusive solutions.
+				{translations.home.cta.description}
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a
 					href="/products"
 					class="neo-button bg-primary text-white px-8 py-4 font-black text-lg uppercase"
 				>
-					View Products
+					{translations.home.cta.viewProducts}
 				</a>
 				<a
 					href="/impressum"
 					class="neo-button bg-secondary text-black px-8 py-4 font-black text-lg uppercase"
 				>
-					Contact Us
+					{translations.home.cta.contactUs}
 				</a>
 			</div>
 		</div>

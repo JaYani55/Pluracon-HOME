@@ -1,3 +1,10 @@
+<script lang="ts">
+	import { currentLanguage, t } from '$lib/stores/language';
+
+	let lang = $derived($currentLanguage);
+	let translations = $derived(t(lang));
+</script>
+
 <svelte:head>
 	<title>Philosophy | Pluracon</title>
 	<meta name="description" content="Our philosophy and approach to building inclusive solutions" />
@@ -8,7 +15,7 @@
 	<section class="py-16 px-6 bg-accent border-b-4 border-black">
 		<div class="container mx-auto max-w-6xl">
 			<div class="border-4 border-black bg-white p-2 inline-block">
-				<h1 class="text-5xl md:text-6xl font-black uppercase px-4 py-2">Philosophy</h1>
+				<h1 class="text-5xl md:text-6xl font-black uppercase px-4 py-2">{translations.philosophy.title}</h1>
 			</div>
 		</div>
 	</section>
@@ -26,11 +33,11 @@
 				</div>
 				
 				<h2 class="text-3xl md:text-4xl font-black uppercase mb-6">
-					We are still thinking about what to write here
+					{translations.philosophy.underConstruction}
 				</h2>
 				
 				<div class="inline-block border-4 border-black bg-white px-6 py-3 mt-4">
-					<p class="font-black uppercase text-sm">Under Construction 🚧</p>
+					<p class="font-black uppercase text-sm">{translations.philosophy.constructionBadge}</p>
 				</div>
 			</div>
 		</div>
@@ -40,23 +47,23 @@
 	<section class="py-16 px-6 bg-primary">
 		<div class="container mx-auto max-w-4xl text-center">
 			<h3 class="text-3xl font-black text-white uppercase mb-6">
-				Check back soon!
+				{translations.philosophy.checkBack}
 			</h3>
 			<p class="text-xl font-bold text-white mb-8">
-				We're working on something special. In the meantime, explore our products and blog.
+				{translations.philosophy.workingOnIt}
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a
 					href="/products"
 					class="neo-button bg-secondary text-black px-8 py-3 font-black uppercase"
 				>
-					View Products
+					{translations.philosophy.viewProducts}
 				</a>
 				<a
 					href="/blog"
 					class="neo-button bg-white text-black px-8 py-3 font-black uppercase"
 				>
-					Read Blog
+					{translations.philosophy.readBlog}
 				</a>
 			</div>
 		</div>
