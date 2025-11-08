@@ -55,6 +55,38 @@ export const translations = {
 				description: 'Entdecken Sie unsere Produkte oder kontaktieren Sie uns, um zu erfahren, wie wir Ihnen beim Aufbau inklusiver Lösungen helfen können.',
 				viewProducts: 'Produkte ansehen',
 				contactUs: 'Kontakt'
+			},
+			bookMe: {
+				title: 'Buche mich',
+				subtitle: 'Lösungen für Mensch & System',
+				intro: 'Mit mehrjähriger Erfahrung an der Schnittstelle von Personalmanagement und Software-Architektur – in Großunternehmen, KMU und Start-ups – biete ich mehr als nur Code. Ich entwerfe ganzheitliche Lösungen für Deine Business-Herausforderungen.',
+				servicesTitle: 'Mein Leistungsangebot',
+				tech: {
+					title: 'Technologie & Software:',
+					description: 'Webauftritte, Web Apps, internes Tooling, KI-Automatisierung.'
+				},
+				architecture: {
+					title: 'Architektur & Prozesse:',
+					description: 'Systemdesign, Prozessanalyse, digitale Barrierefreiheit.'
+				},
+				people: {
+					title: 'Mensch & Organisation:',
+					description: 'Optimierte Recruiting Pipelines, Mitarbeitendenschulungen, Organisationsentwicklung.'
+				},
+				goal: 'Mein Ziel: Eine digitalisierte, moderne Organisation, in der Du und Dein Team gut und gerne arbeiten.'
+			},
+			techStack: {
+				title: 'Mein Tech Stack',
+				subtitle: 'Die Werkzeuge, die ich nutze, um Ihre Lösungen zu bauen',
+				python: 'Python',
+				pythonDesc: 'KI, Machine Learning & Automatisierung',
+				svelte: 'Svelte 5',
+				svelteDesc: 'Schnelle, moderne Web-Apps',
+				nextjs: 'Next.js',
+				nextjsDesc: 'React & Server-Side Rendering',
+				supabase: 'Supabase',
+				supabaseDesc: 'Open Source Backend & Datenbank',
+				learnMore: 'Mehr erfahren →'
 			}
 		},
 		// Products Page
@@ -150,6 +182,38 @@ export const translations = {
 				description: 'Explore our products or get in touch to learn how we can help you build inclusive solutions.',
 				viewProducts: 'View Products',
 				contactUs: 'Contact Us'
+			},
+			bookMe: {
+				title: 'Book Me',
+				subtitle: 'Solutions for People & Systems',
+				intro: 'With several years of experience at the intersection of human resources and software architecture – in large corporations, SMEs and start-ups – I offer more than just code. I design holistic solutions for your business challenges.',
+				servicesTitle: 'My Service Offering',
+				tech: {
+					title: 'Technology & Software:',
+					description: 'Websites, web apps, internal tooling, AI automation.'
+				},
+				architecture: {
+					title: 'Architecture & Processes:',
+					description: 'System design, process analysis, digital accessibility.'
+				},
+				people: {
+					title: 'People & Organization:',
+					description: 'Optimized recruiting pipelines, employee training, organizational development.'
+				},
+				goal: 'My goal: A digitalized, modern organization where you and your team enjoy working.'
+			},
+			techStack: {
+				title: 'My Tech Stack',
+				subtitle: 'The tools I use to build your solutions',
+				python: 'Python',
+				pythonDesc: 'AI, Machine Learning & Automation',
+				svelte: 'Svelte 5',
+				svelteDesc: 'Fast, modern web apps',
+				nextjs: 'Next.js',
+				nextjsDesc: 'React & Server-Side Rendering',
+				supabase: 'Supabase',
+				supabaseDesc: 'Open Source Backend & Database',
+				learnMore: 'Learn more →'
 			}
 		},
 		// Products Page

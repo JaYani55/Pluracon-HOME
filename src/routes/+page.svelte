@@ -211,6 +211,152 @@
 		</div>
 	</section>
 
+	<!-- Buche mich Section -->
+	<section class="py-20 px-6 bg-white">
+		<div class="container mx-auto max-w-6xl">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<!-- Left: Content -->
+				<div>
+					<div class="border-4 border-black bg-accent text-white p-2 inline-block mb-8">
+						<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">{translations.home.bookMe.title}</h2>
+					</div>
+
+					<h3 class="text-3xl font-black mb-6 uppercase">
+						{translations.home.bookMe.subtitle}
+					</h3>
+
+					<p class="text-lg font-medium mb-8 leading-relaxed">
+						{translations.home.bookMe.intro}
+					</p>
+
+					<div class="neo-card bg-secondary p-6 mb-6">
+						<h4 class="text-2xl font-black mb-4 uppercase">{translations.home.bookMe.servicesTitle}</h4>
+						
+						<div class="space-y-4">
+							<div>
+								<h5 class="text-lg font-black uppercase mb-2">{translations.home.bookMe.tech.title}</h5>
+								<p class="font-medium">{translations.home.bookMe.tech.description}</p>
+							</div>
+
+							<div>
+								<h5 class="text-lg font-black uppercase mb-2">{translations.home.bookMe.architecture.title}</h5>
+								<p class="font-medium">{translations.home.bookMe.architecture.description}</p>
+							</div>
+
+							<div>
+								<h5 class="text-lg font-black uppercase mb-2">{translations.home.bookMe.people.title}</h5>
+								<p class="font-medium">{translations.home.bookMe.people.description}</p>
+							</div>
+						</div>
+					</div>
+
+					<p class="text-xl font-bold border-4 border-black bg-primary text-white p-4">
+						{translations.home.bookMe.goal}
+					</p>
+				</div>
+
+				<!-- Right: Portrait Image -->
+				<div class="flex justify-center items-center">
+					<div class="neo-card bg-white p-0 overflow-hidden max-w-md transition-transform duration-300 hover:scale-105">
+						<img 
+							src="/JR_20210803_114300-EDIT.jpg" 
+							alt="Portrait" 
+							class="w-full h-auto"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Tech Stack Section -->
+	<section class="py-20 px-6 bg-secondary">
+		<div class="container mx-auto max-w-6xl">
+			<div class="text-center mb-12">
+				<div class="border-4 border-black bg-primary text-white p-2 inline-block mb-6">
+					<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">{translations.home.techStack.title}</h2>
+				</div>
+				<p class="text-xl font-bold">
+					{translations.home.techStack.subtitle}
+				</p>
+			</div>
+
+			<div class="grid md:grid-cols-4 gap-8">
+				<!-- Python -->
+				<a href="/blog/python-ai-machine-learning" class="group">
+					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2">
+						<div class="mb-6 text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
+							🐍
+						</div>
+						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-primary transition-colors">
+							{translations.home.techStack.python}
+						</h3>
+						<p class="font-medium mb-4 text-sm">
+							{translations.home.techStack.pythonDesc}
+						</p>
+						<span class="inline-block border-4 border-black bg-primary text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-accent transition-colors">
+							{translations.home.techStack.learnMore}
+						</span>
+					</div>
+				</a>
+
+				<!-- Svelte 5 -->
+				<a href="/blog/svelte-5-modern-web-apps" class="group">
+					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2">
+						<div class="mb-6 text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
+							🔥
+						</div>
+						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-accent transition-colors">
+							{translations.home.techStack.svelte}
+						</h3>
+						<p class="font-medium mb-4 text-sm">
+							{translations.home.techStack.svelteDesc}
+						</p>
+						<span class="inline-block border-4 border-black bg-accent text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-primary transition-colors">
+							{translations.home.techStack.learnMore}
+						</span>
+					</div>
+				</a>
+
+				<!-- Next.js -->
+				<a href="/blog/nextjs-react-server-side-rendering" class="group">
+					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2">
+						<div class="mb-6 text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
+							⚛️
+						</div>
+						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-primary transition-colors">
+							{translations.home.techStack.nextjs}
+						</h3>
+						<p class="font-medium mb-4 text-sm">
+							{translations.home.techStack.nextjsDesc}
+						</p>
+						<span class="inline-block border-4 border-black bg-primary text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-accent transition-colors">
+							{translations.home.techStack.learnMore}
+						</span>
+					</div>
+				</a>
+
+				<!-- Supabase -->
+				<a href="/blog/supabase-open-source-backend" class="group">
+					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2">
+						<div class="mb-6 text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
+							🗄️
+						</div>
+						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-accent transition-colors">
+							{translations.home.techStack.supabase}
+						</h3>
+						<p class="font-medium mb-4 text-sm">
+							{translations.home.techStack.supabaseDesc}
+						</p>
+						<span class="inline-block border-4 border-black bg-accent text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-primary transition-colors">
+							{translations.home.techStack.learnMore}
+						</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
 	<!-- CTA Section -->
 	<section class="py-16 px-6 bg-white border-y-4 border-black">
 		<div class="container mx-auto max-w-4xl text-center">
