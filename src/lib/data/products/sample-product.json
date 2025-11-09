@@ -1,14 +1,14 @@
 {
 	"slug": "sample-product",
 	"title": "Sample Product",
-	"published": true,
+	"published": false,
 	"publishedAt": "2025-01-15T10:00:00Z",
 	"updatedAt": "2025-01-15T10:00:00Z",
 	"hero": {
 		"title": "Sample Product Title",
 		"subtitle": "Transform Your Experience",
 		"description": "This is a sample product demonstrating the new SvelteKit ISR architecture with Svelte 5.",
-		"image": "/images/sample-product-hero.jpg",
+		"image": "/schaubild-systems1.jpg",
 		"ctaText": "Get Started",
 		"ctaLink": "/contact"
 	},
@@ -37,13 +37,13 @@
 			"id": "card-1",
 			"title": "Use Case One",
 			"description": "How customers use this product in real-world scenarios.",
-			"image": "/images/use-case-1.jpg"
+			"image": "/schaubild-systems1.jpg"
 		},
 		{
 			"id": "card-2",
 			"title": "Use Case Two",
 			"description": "Another practical application of the product.",
-			"image": "/images/use-case-2.jpg"
+			"image": "/schaubild-systems1.jpg"
 		}
 	],
 	"faq": [

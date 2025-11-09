@@ -392,7 +392,7 @@
 					{translations.home.cta.viewProducts}
 				</a>
 				<a
-					href="/impressum"
+					href="mailto:jay@pluracon.org"
 					class="neo-button bg-secondary text-black px-8 py-4 font-black text-lg uppercase"
 				>
 					{translations.home.cta.contactUs}

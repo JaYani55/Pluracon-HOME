@@ -2,18 +2,14 @@ import { getProductBySlug } from '$lib/server/productService';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
-// Enable prerendering for ISR
-// Pages will be pre-rendered at build time and revalidated incrementally
-export const prerender = true;
+// Disable prerendering until we have published products
+export const prerender = false;
 
-export const load: PageServerLoad = async ({ params, setHeaders, url }) => {
+export const load: PageServerLoad = async ({ params, setHeaders }) => {
 	const { slug } = params;
-	
-	// Check for preview mode via URL parameter
-	const isPreview = url.searchParams.get('preview') === 'true';
 
 	// Fetch product data using the server service
-	const product = await getProductBySlug(slug, { isPreview });
+	const product = await getProductBySlug(slug, { isPreview: false });
 
 	if (!product) {
 		error(404, {
@@ -21,16 +17,14 @@ export const load: PageServerLoad = async ({ params, setHeaders, url }) => {
 		});
 	}
 
-	// Set ISR cache headers (only if NOT in preview mode)
+	// Set ISR cache headers for optimal performance
 	// This tells the hosting platform (Vercel, Netlify, etc.) to cache the page
 	// and revalidate it after 1 hour (3600 seconds)
-	if (!isPreview) {
-		setHeaders({
-			'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400'
-			// s-maxage=3600: Cache for 1 hour
-			// stale-while-revalidate=86400: Serve stale content while revalidating for up to 24 hours
-		});
-	}
+	setHeaders({
+		'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400'
+		// s-maxage=3600: Cache for 1 hour
+		// stale-while-revalidate=86400: Serve stale content while revalidating for up to 24 hours
+	});
 
 	// Return data to the page component
 	return {

@@ -16,25 +16,21 @@
 				</p>
 			</div>
 
-			<!-- Products -->
-			<div>
-				<h4 class="font-black mb-4 uppercase text-sm">{translations.footer.productsTitle}</h4>
-				<ul class="space-y-2 text-sm font-medium">
-					<li><a href="/products" class="hover:text-primary transition-colors hover:underline decoration-4">{translations.footer.allProducts}</a></li>
-					<li><a href="/products/sample-product" class="hover:text-primary transition-colors hover:underline decoration-4">{translations.footer.sampleProduct}</a></li>
-				</ul>
-			</div>
+		<!-- Products -->
+		<div>
+			<h4 class="font-black mb-4 uppercase text-sm">{translations.footer.productsTitle}</h4>
+			<ul class="space-y-2 text-sm font-medium">
+				<li><a href="/products" class="hover:text-primary transition-colors hover:underline decoration-4">{translations.footer.allProducts}</a></li>
+			</ul>
+		</div>
 
-			<!-- Resources -->
-			<div>
-				<h4 class="font-black mb-4 uppercase text-sm">{translations.footer.resourcesTitle}</h4>
-				<ul class="space-y-2 text-sm font-medium">
-					<li><a href="/blog" class="hover:text-primary transition-colors hover:underline decoration-4">{translations.footer.blog}</a></li>
-					<li><a href="/blog/sample-blog-post" class="hover:text-primary transition-colors hover:underline decoration-4">{translations.footer.latestPost}</a></li>
-				</ul>
-			</div>
-
-			<!-- Legal -->
+		<!-- Resources -->
+		<div>
+			<h4 class="font-black mb-4 uppercase text-sm">{translations.footer.resourcesTitle}</h4>
+			<ul class="space-y-2 text-sm font-medium">
+				<li><a href="/blog" class="hover:text-primary transition-colors hover:underline decoration-4">{translations.footer.blog}</a></li>
+			</ul>
+		</div>			<!-- Legal -->
 			<div>
 				<h4 class="font-black mb-4 uppercase text-sm">{translations.footer.legalTitle}</h4>
 				<ul class="space-y-2 text-sm font-medium">

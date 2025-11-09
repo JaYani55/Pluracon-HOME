@@ -5,14 +5,11 @@ import type { PageServerLoad } from './$types';
 // Enable prerendering for ISR
 export const prerender = true;
 
-export const load: PageServerLoad = async ({ params, setHeaders, url }) => {
+export const load: PageServerLoad = async ({ params, setHeaders }) => {
 	const { slug } = params;
-	
-	// Check for preview mode via URL parameter
-	const isPreview = url.searchParams.get('preview') === 'true';
 
 	// Fetch blog post data using the server service
-	const blogPost = await getBlogPostBySlug(slug, { isPreview });
+	const blogPost = await getBlogPostBySlug(slug, { isPreview: false });
 
 	if (!blogPost) {
 		error(404, {
@@ -20,15 +17,13 @@ export const load: PageServerLoad = async ({ params, setHeaders, url }) => {
 		});
 	}
 
-	// Set ISR cache headers (only if NOT in preview mode)
+	// Set ISR cache headers for optimal performance
 	// Blog posts might update less frequently, so we can cache for longer
-	if (!isPreview) {
-		setHeaders({
-			'Cache-Control': 'public, s-maxage=7200, stale-while-revalidate=86400'
-			// s-maxage=7200: Cache for 2 hours
-			// stale-while-revalidate=86400: Serve stale content while revalidating for up to 24 hours
-		});
-	}
+	setHeaders({
+		'Cache-Control': 'public, s-maxage=7200, stale-while-revalidate=86400'
+		// s-maxage=7200: Cache for 2 hours
+		// stale-while-revalidate=86400: Serve stale content while revalidating for up to 24 hours
+	});
 
 	// Return data to the page component
 	return {

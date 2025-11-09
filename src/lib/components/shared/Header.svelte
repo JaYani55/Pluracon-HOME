@@ -29,7 +29,7 @@
 			<div class="flex items-center gap-3">
 				<LanguageSelector />
 				<a
-					href="/products"
+					href="mailto:jay@pluracon.org"
 					class="neo-button bg-primary text-white px-6 py-2 font-bold uppercase text-sm"
 				>
 					{translations.nav.joinUs}
