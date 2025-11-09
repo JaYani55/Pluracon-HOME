@@ -7,7 +7,7 @@
 	"updatedAt": "2025-01-20T10:00:00Z",
 	"category": "Technologie",
 	"tags": ["Python", "AI", "Machine Learning", "FastAPI", "Automatisierung"],
-	"coverImage": "/images/blog/python-ai.jpg",
+	"coverImage": "/Python.png",
 	"readingTime": 7,
 	"author": {
 		"name": "Pluracon Team",

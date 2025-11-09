@@ -7,7 +7,7 @@
 	"updatedAt": "2025-01-22T10:00:00Z",
 	"category": "Technologie",
 	"tags": ["Svelte 5", "Frontend", "Web Development", "UX", "Barrierefreiheit"],
-	"coverImage": "/images/blog/svelte5.jpg",
+	"coverImage": "/svelte5.png",
 	"readingTime": 6,
 	"author": {
 		"name": "Pluracon Team",

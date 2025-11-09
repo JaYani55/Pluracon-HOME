@@ -7,7 +7,7 @@
 	"updatedAt": "2025-01-26T10:00:00Z",
 	"category": "Technologie",
 	"tags": ["Supabase", "PostgreSQL", "Backend", "Database", "SaaS"],
-	"coverImage": "/images/blog/supabase.jpg",
+	"coverImage": "/supabase.png",
 	"readingTime": 7,
 	"author": {
 		"name": "Pluracon Team",
