@@ -284,14 +284,14 @@
 			<div class="grid md:grid-cols-4 gap-8">
 				<!-- Python -->
 				<a href="/blog/python-ai-machine-learning" class="group">
-					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2">
-						<div class="mb-6 text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
-							🐍
+					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
+						<div class="mb-6 h-28 flex items-center justify-center filter grayscale group-hover:grayscale-0 transition-all duration-300">
+							<img src="/Python.png" alt="Python Logo" class="h-full w-auto object-contain" />
 						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-primary transition-colors">
+						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-primary transition-colors min-h-16 flex items-center justify-center">
 							{translations.home.techStack.python}
 						</h3>
-						<p class="font-medium mb-4 text-sm">
+						<p class="font-medium mb-4 text-sm grow">
 							{translations.home.techStack.pythonDesc}
 						</p>
 						<span class="inline-block border-4 border-black bg-primary text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-accent transition-colors">
@@ -302,17 +302,17 @@
 
 				<!-- Svelte 5 -->
 				<a href="/blog/svelte-5-modern-web-apps" class="group">
-					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2">
-						<div class="mb-6 text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
-							🔥
+					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
+						<div class="mb-6 h-28 flex items-center justify-center filter grayscale group-hover:grayscale-0 transition-all duration-300">
+							<img src="/svelte5.png" alt="Svelte 5 Logo" class="h-full w-auto object-contain" />
 						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-accent transition-colors">
+						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-accent transition-colors min-h-16 flex items-center justify-center">
 							{translations.home.techStack.svelte}
 						</h3>
-						<p class="font-medium mb-4 text-sm">
+						<p class="font-medium mb-4 text-sm grow">
 							{translations.home.techStack.svelteDesc}
 						</p>
-						<span class="inline-block border-4 border-black bg-accent text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-primary transition-colors">
+						<span class="inline-block border-4 border-black bg-primary text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-accent transition-colors">
 							{translations.home.techStack.learnMore}
 						</span>
 					</div>
@@ -320,14 +320,14 @@
 
 				<!-- Next.js -->
 				<a href="/blog/nextjs-react-server-side-rendering" class="group">
-					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2">
-						<div class="mb-6 text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
-							⚛️
+					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
+						<div class="mb-6 h-28 flex items-center justify-center filter grayscale group-hover:grayscale-0 transition-all duration-300">
+							<img src="/next-js-logo-png_seeklogo-321806.png" alt="Next.js Logo" class="h-full w-auto object-contain" />
 						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-primary transition-colors">
+						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-primary transition-colors min-h-16 flex items-center justify-center">
 							{translations.home.techStack.nextjs}
 						</h3>
-						<p class="font-medium mb-4 text-sm">
+						<p class="font-medium mb-4 text-sm grow">
 							{translations.home.techStack.nextjsDesc}
 						</p>
 						<span class="inline-block border-4 border-black bg-primary text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-accent transition-colors">
@@ -338,17 +338,17 @@
 
 				<!-- Supabase -->
 				<a href="/blog/supabase-open-source-backend" class="group">
-					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2">
-						<div class="mb-6 text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-300">
-							🗄️
+					<div class="neo-card bg-white p-8 text-center transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
+						<div class="mb-6 h-28 flex items-center justify-center filter grayscale group-hover:grayscale-0 transition-all duration-300">
+							<img src="/supabase.png" alt="Supabase Logo" class="h-full w-auto object-contain" />
 						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-accent transition-colors">
+						<h3 class="text-2xl font-black mb-3 uppercase group-hover:text-accent transition-colors min-h-16 flex items-center justify-center">
 							{translations.home.techStack.supabase}
 						</h3>
-						<p class="font-medium mb-4 text-sm">
+						<p class="font-medium mb-4 text-sm grow">
 							{translations.home.techStack.supabaseDesc}
 						</p>
-						<span class="inline-block border-4 border-black bg-accent text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-primary transition-colors">
+						<span class="inline-block border-4 border-black bg-primary text-white px-4 py-2 font-black uppercase text-xs group-hover:bg-accent transition-colors">
 							{translations.home.techStack.learnMore}
 						</span>
 					</div>

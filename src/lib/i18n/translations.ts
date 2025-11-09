@@ -77,7 +77,7 @@ export const translations = {
 			},
 			techStack: {
 				title: 'Mein Tech Stack',
-				subtitle: 'Die Werkzeuge, die ich nutze, um Ihre Lösungen zu bauen',
+				subtitle: 'Die Werkzeuge, die ich nutze, um Deine Lösungen zu bauen',
 				python: 'Python',
 				pythonDesc: 'KI, Machine Learning & Automatisierung',
 				svelte: 'Svelte 5',
@@ -85,7 +85,7 @@ export const translations = {
 				nextjs: 'Next.js',
 				nextjsDesc: 'React & Server-Side Rendering',
 				supabase: 'Supabase',
-				supabaseDesc: 'Open Source Backend & Datenbank',
+				supabaseDesc: 'Sicheres Backend & Datenbank',
 				learnMore: 'Mehr erfahren →'
 			}
 		},
@@ -212,7 +212,7 @@ export const translations = {
 				nextjs: 'Next.js',
 				nextjsDesc: 'React & Server-Side Rendering',
 				supabase: 'Supabase',
-				supabaseDesc: 'Open Source Backend & Database',
+				supabaseDesc: 'Secure Backend & Database',
 				learnMore: 'Learn more →'
 			}
 		},
