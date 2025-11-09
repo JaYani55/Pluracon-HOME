@@ -14,9 +14,9 @@ export const translations = {
 		// Homepage
 		home: {
 			hero: {
-				innovate: 'Innovieren.',
-				include: 'Einbeziehen.',
-				empower: 'Ermächtigen',
+				innovate: 'Gemeinsam.',
+				include: 'Innovativ.',
+				empower: 'Erfolgreich.',
 				subtitle: 'Lösungen für eine vernetzte Welt',
 				description: 'Wir entwickeln barrierefreie, modernste Technologie, die Verständnis und Fortschritt fördert.',
 				explorePlatforms: 'Plattformen erkunden',

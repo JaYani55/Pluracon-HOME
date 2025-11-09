@@ -20,52 +20,55 @@
 					<div>
 						<h2 class="text-3xl font-black mt-0 mb-4 uppercase border-b-4 border-black pb-2">Angaben gemäß § 5 TMG</h2>
 						<p class="font-medium">
-							Pluracon GmbH<br />
-							Musterstraße 123<br />
-							12345 Musterstadt<br />
+							Jan-Alban Rathjen<br />
+							Pluracon<br />
+							Riensberger Straße 72<br />
+							28359 Bremen<br />
 							Deutschland
-						</p>
-					</div>
-
-					<div>
-						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">Vertreten durch</h2>
-						<p class="font-medium">
-							Geschäftsführer: Max Mustermann
 						</p>
 					</div>
 
 					<div>
 						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">Kontakt</h2>
 						<p class="font-medium">
-							Telefon: +49 (0) 123 456789<br />
-							E-Mail: info@pluracon.de<br />
-							Website: https://pluracon.de
+							Telefon: bitte per E-Mail anfragen<br />
+							E-Mail: jay@pluracon.org
 						</p>
 					</div>
 
 					<div>
-						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">Registereintrag</h2>
+						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">Verantwortlich für den Inhalt (gem. § 18 Abs. 2 MStV)</h2>
 						<p class="font-medium">
-							Eintragung im Handelsregister<br />
-							Registergericht: Amtsgericht Musterstadt<br />
-							Registernummer: HRB 12345
+							Jan-Alban Rathjen<br />
+							Riensberger Straße 72<br />
+							28359 Bremen
 						</p>
 					</div>
 
 					<div>
-						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">Umsatzsteuer-ID</h2>
+						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">EU-Streitschlichtung</h2>
+						<p class="font-medium mb-4">
+							Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:<br />
+							<a href="https://ec.europa.eu/consumers/os/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-accent font-black underline">
+								https://ec.europa.eu/consumers/os/
+							</a>
+						</p>
 						<p class="font-medium">
-							Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-							DE123456789
+							Unsere E-Mail-Adresse finden Sie oben im Impressum.
 						</p>
 					</div>
 
 					<div>
-						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
 						<p class="font-medium">
-							Max Mustermann<br />
-							Musterstraße 123<br />
-							12345 Musterstadt
+							Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+						</p>
+					</div>
+
+					<div>
+						<h2 class="text-3xl font-black mb-4 uppercase border-b-4 border-black pb-2">Hinweis für Kleinunternehmer</h2>
+						<p class="font-medium">
+							Dieses Impressum gilt für einen Kleinunternehmer im Sinne des § 19 UStG.
 						</p>
 					</div>
 
