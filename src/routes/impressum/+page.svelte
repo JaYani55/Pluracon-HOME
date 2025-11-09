@@ -1,6 +1,8 @@
 <svelte:head>
 	<title>Impressum | Pluracon</title>
 	<meta name="description" content="Legal information and imprint for Pluracon" />
+	<meta name="robots" content="noindex, follow" />
+	<link rel="canonical" href="https://pluracon.org/impressum" />
 </svelte:head>
 
 <div class="min-h-screen bg-background">

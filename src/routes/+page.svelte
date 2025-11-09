@@ -8,6 +8,24 @@
 <svelte:head>
 	<title>Pluracon - Building Inclusive Solutions</title>
 	<meta name="description" content="Discover innovative products and insights for building inclusive and accessible solutions." />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Pluracon - Building Inclusive Solutions" />
+	<meta property="og:description" content="Discover innovative products and insights for building inclusive and accessible solutions." />
+	<meta property="og:image" content="https://pluracon.org/schaubild-systems1.jpg" />
+	<meta property="og:site_name" content="Pluracon" />
+	<meta property="og:url" content="https://pluracon.org/" />
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Pluracon - Building Inclusive Solutions" />
+	<meta name="twitter:description" content="Discover innovative products and insights for building inclusive and accessible solutions." />
+	<meta name="twitter:image" content="https://pluracon.org/schaubild-systems1.jpg" />
+	
+	<!-- Additional SEO -->
+	<link rel="canonical" href="https://pluracon.org/" />
+	<meta name="keywords" content="Pluracon, inclusive solutions, accessibility, web development, Python, Svelte, Next.js, Supabase" />
 </svelte:head>
 
 <div class="bg-background">

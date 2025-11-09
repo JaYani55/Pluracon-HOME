@@ -18,9 +18,39 @@
 <svelte:head>
 	<title>{blogPost.title} | Pluracon Blog</title>
 	<meta name="description" content={blogPost.description} />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content={blogPost.title} />
+	<meta property="og:description" content={blogPost.description} />
 	{#if blogPost.coverImage}
 		<meta property="og:image" content={blogPost.coverImage} />
 	{/if}
+	<meta property="og:site_name" content="Pluracon" />
+	{#if blogPost.publishedAt}
+		<meta property="article:published_time" content={blogPost.publishedAt} />
+	{/if}
+	{#if blogPost.author.name}
+		<meta property="article:author" content={blogPost.author.name} />
+	{/if}
+	{#if blogPost.category}
+		<meta property="article:section" content={blogPost.category} />
+	{/if}
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={blogPost.title} />
+	<meta name="twitter:description" content={blogPost.description} />
+	{#if blogPost.coverImage}
+		<meta name="twitter:image" content={blogPost.coverImage} />
+	{/if}
+	
+	<!-- Additional SEO -->
+	<meta name="author" content={blogPost.author.name} />
+	{#if blogPost.tags}
+		<meta name="keywords" content={blogPost.tags.join(', ')} />
+	{/if}
+	<link rel="canonical" href="https://pluracon.org/blog/{blogPost.slug}" />
 </svelte:head>
 
 <article class="min-h-screen bg-background">

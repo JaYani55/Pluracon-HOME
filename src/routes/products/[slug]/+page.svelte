@@ -9,6 +9,26 @@
 <svelte:head>
 	<title>{product.title} | Pluracon</title>
 	<meta name="description" content={product.hero.description} />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={product.title} />
+	<meta property="og:description" content={product.hero.description} />
+	{#if product.hero.image}
+		<meta property="og:image" content={product.hero.image} />
+	{/if}
+	<meta property="og:site_name" content="Pluracon" />
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={product.title} />
+	<meta name="twitter:description" content={product.hero.description} />
+	{#if product.hero.image}
+		<meta name="twitter:image" content={product.hero.image} />
+	{/if}
+	
+	<!-- Additional SEO -->
+	<link rel="canonical" href="https://pluracon.org/products/{product.slug}" />
 </svelte:head>
 
 <div class="min-h-screen bg-background">

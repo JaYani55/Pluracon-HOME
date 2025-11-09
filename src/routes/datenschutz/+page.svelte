@@ -1,6 +1,8 @@
 <svelte:head>
 	<title>Datenschutz | Pluracon</title>
 	<meta name="description" content="Privacy policy and data protection information for Pluracon" />
+	<meta name="robots" content="noindex, follow" />
+	<link rel="canonical" href="https://pluracon.org/datenschutz" />
 </svelte:head>
 
 <div class="min-h-screen bg-background">
