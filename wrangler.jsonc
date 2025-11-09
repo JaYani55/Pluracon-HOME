@@ -1,5 +1,8 @@
 {
   "name": "pluracon-home",
   "compatibility_date": "2025-11-09",
-  "main": ".svelte-kit/cloudflare/_worker.js"
+  "main": ".svelte-kit/cloudflare/_worker.js",
+  "assets": {
+    "directory": ".svelte-kit/cloudflare"
+  }
 }
