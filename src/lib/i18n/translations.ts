@@ -17,8 +17,8 @@ export const translations = {
 				innovate: 'Gemeinsam.',
 				include: 'Innovativ.',
 				empower: 'Erfolgreich.',
-				subtitle: 'Lösungen für eine vernetzte Welt',
-				description: 'Wir entwickeln barrierefreie, modernste Technologie, die Verständnis und Fortschritt fördert.',
+				subtitle: 'Ihr strategischer Partner für digitale Wertschöpfung. Inter-operabel und holistisch.',
+				description: 'Das Internet ist längst zu mehr als einem Schaufenster geworden. Digitale Plattformen ziehen sich durch die gesamte Wertschöpfungskette – in jeder Branche. In dieser komplexen digitalen Welt ist eine klare Strategie kein Luxus, sondern überlebenswichtig.',
 				explorePlatforms: 'Plattformen erkunden',
 				readStory: 'Unsere Geschichte'
 			},
@@ -40,6 +40,32 @@ export const translations = {
 				fastDesc: 'Entwickelt mit modernster Technologie wie SvelteKit und Svelte 5 für außergewöhnliche Leistung.',
 				scalable: 'Skalierbare Lösungen',
 				scalableDesc: 'Unsere Produkte wachsen mit Ihren Anforderungen, von kleinen Projekten bis hin zu Implementierungen auf Unternehmensebene.'
+			},
+			pillars: {
+				info: {
+					badge: 'Strategie & Information',
+					heading: 'Information ist der Schlüssel zum Erfolg',
+					lead: 'Pluracon schafft Wettbewerbsvorteile',
+					body: 'Die Landschaft der digitalen Lösungsanbieter ist unüberschaubar und die Informationslücke zwischen Anbietern und Geschäftstreibenden klafft riesig. Ich helfe Ihnen, die richtigen technologischen Weichen zu stellen – bevor ein heute attraktives Angebot zur teuren Kostenfalle wird (Vendor Lock-in).'
+				},
+				interop: {
+					badge: 'Interoperabilität',
+					heading: 'Inter-Operabilität: Vom Speicherfresser zum Goldschatz',
+					lead: 'Pluracon schafft Verbindungen',
+					body: '"Daten sind das Öl des 21. Jahrhunderts" – doch dieses Öl ist wertlos, wenn es in Silos lagert. Durch moderne API-Modelle mache ich Ihre Datenflüsse interoperabel, verbinde Ihre bestehenden Systeme und ermögliche datenbasierte Geschäftsmodelle.'
+				},
+				transformation: {
+					badge: 'Digitale Transformation',
+					heading: 'Von Brick and Mortar zu SaaS',
+					lead: 'Pluracon schafft Zukunftsvisionen',
+					body: 'Ob Sie ein etabliertes Geschäft digitalisieren oder ein skalierbares SaaS-Modell aufbauen: Ich analysiere Ihre Ausgangslage, entwickle eine maßgeschneiderte Digitalstrategie und begleite Sie von der ersten Idee bis zur marktreifen Lösung.'
+				},
+				automation: {
+					badge: 'KI-Automatisierung',
+					heading: 'Menschzentrierte Automatisierung',
+					lead: 'Pluracon schafft Lösungen',
+					body: 'Ich identifiziere repetitive, fehleranfällige Aufgaben in Ihren Abläufen und entwickle KI-gestützte Automatisierungslösungen. Das Ergebnis: Ihre Mitarbeitenden werden entlastet und gewinnen Zeit zurück für strategische Planung und hochwertige Kundeninteraktionen.'
+				}
 			},
 			blog: {
 				title: 'Neueste Erkenntnisse',
@@ -144,8 +170,8 @@ export const translations = {
 				innovate: 'Innovate.',
 				include: 'Include.',
 				empower: 'Empower',
-				subtitle: 'Solutions for a Connected World',
-				description: 'We build accessible, cutting-edge technology that brings fostering understanding and progress.',
+				subtitle: 'Your strategic partner for digital value creation. Interoperable and holistic.',
+				description: 'The internet has long since become more than a showcase for your business. Digital platforms run through the entire value chain – in every industry. In this complex digital world, a clear strategy is not a luxury, but a matter of survival.',
 				explorePlatforms: 'Explore Platforms',
 				readStory: 'Read Our Story'
 			},
@@ -167,6 +193,32 @@ export const translations = {
 				fastDesc: 'Built with cutting-edge technology like SvelteKit and Svelte 5, delivering exceptional performance.',
 				scalable: 'Scalable Solutions',
 				scalableDesc: 'Our products grow with your needs, from small projects to enterprise-level implementations.'
+			},
+			pillars: {
+				info: {
+					badge: 'Strategy & Information',
+					heading: 'Information is the Key to Success',
+					lead: 'Pluracon creates competitive advantages',
+					body: 'The landscape of digital solution providers is vast and the information gap between vendors and business owners is enormous. I help you make the right technological choices – before an attractive offer becomes a costly trap (vendor lock-in).'
+				},
+				interop: {
+					badge: 'Interoperability',
+					heading: 'Interoperability: From Data Silo to Gold Mine',
+					lead: 'Pluracon creates connections',
+					body: '"Data is the oil of the 21st century" – but this oil is worthless when it sits in isolated silos. Through modern API models, I make your data flows interoperable, connect your existing systems, and enable data-driven business models.'
+				},
+				transformation: {
+					badge: 'Digital Transformation',
+					heading: 'From Brick and Mortar to SaaS',
+					lead: 'Pluracon creates visions for the future',
+					body: 'Whether you want to digitize an established business or build a scalable SaaS model from scratch: I analyze your situation, develop a tailored digital strategy, and guide you from the first idea to a market-ready solution.'
+				},
+				automation: {
+					badge: 'AI Automation',
+					heading: 'Human-Centered Automation',
+					lead: 'Pluracon creates solutions',
+					body: 'I identify repetitive, error-prone tasks in your workflows and develop AI-powered automation solutions. The result: your team is freed from routine activities and gains back valuable time for strategic planning and high-quality customer interactions.'
+				}
 			},
 			blog: {
 				title: 'Latest Insights',

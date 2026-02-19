@@ -7,21 +7,21 @@
 
 <svelte:head>
 	<title>Pluracon - Building Inclusive Solutions</title>
-	<meta name="description" content="Discover innovative products and insights for building inclusive and accessible solutions." />
+	<meta name="description" content="Ihr strategischer Partner für digitale Wertschöpfung – interoperabel, holistisch, menschzentriert." />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Pluracon - Building Inclusive Solutions" />
-	<meta property="og:description" content="Discover innovative products and insights for building inclusive and accessible solutions." />
-	<meta property="og:image" content="https://pluracon.org/schaubild-systems1.jpg" />
+	<meta property="og:description" content="Ihr strategischer Partner für digitale Wertschöpfung – interoperabel, holistisch, menschzentriert." />
+	<meta property="og:image" content="https://pluracon.org/memphis1-2.jpg" />
 	<meta property="og:site_name" content="Pluracon" />
 	<meta property="og:url" content="https://pluracon.org/" />
 	
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Pluracon - Building Inclusive Solutions" />
-	<meta name="twitter:description" content="Discover innovative products and insights for building inclusive and accessible solutions." />
-	<meta name="twitter:image" content="https://pluracon.org/schaubild-systems1.jpg" />
+	<meta name="twitter:description" content="Ihr strategischer Partner für digitale Wertschöpfung – interoperabel, holistisch, menschzentriert." />
+	<meta name="twitter:image" content="https://pluracon.org/memphis1-2.jpg" />
 	
 	<!-- Additional SEO -->
 	<link rel="canonical" href="https://pluracon.org/" />
@@ -32,42 +32,32 @@
 	<!-- Hero Section -->
 	<section class="relative overflow-hidden bg-white">
 		<div class="container mx-auto px-6 py-20 md:py-32">
-			<div class="grid md:grid-cols-2 gap-12 items-center">
-				<!-- Left: Text Content -->
-				<div>
-					<h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-						<span class="text-primary">{translations.home.hero.innovate}</span>
-						<span class="text-accent"> {translations.home.hero.include}</span>
-						<br />
-						<span class="text-foreground">{translations.home.hero.empower}</span>
-					</h1>
-					<p class="text-xl md:text-2xl font-bold mb-8 leading-relaxed">
-						{translations.home.hero.subtitle}
-					</p>
-					<p class="text-lg mb-12 font-medium text-muted-foreground">
-						{translations.home.hero.description}
-					</p>
-					<div class="flex flex-col sm:flex-row gap-4">
-						<a
-							href="/products"
-							class="neo-button bg-primary text-white px-8 py-4 font-black text-lg uppercase text-center"
-						>
-							{translations.home.hero.explorePlatforms}
-						</a>
-						<a
-							href="/blog"
-							class="neo-button bg-secondary text-black px-8 py-4 font-black text-lg uppercase text-center"
-						>
-							{translations.home.hero.readStory}
-						</a>
-					</div>
-				</div>
-
-				<!-- Right: Image/Icon -->
-				<div class="flex justify-center items-center">
-					<div class="neo-card bg-white p-0 overflow-hidden max-w-md transition-transform duration-300 hover:scale-105">
-						<img src="/schaubild-systems1.jpg" alt="Pluracon Systems" class="w-full h-auto" />
-					</div>
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+					<span class="text-primary">{translations.home.hero.innovate}</span>
+					<span class="text-accent"> {translations.home.hero.include}</span>
+					<br />
+					<span class="text-foreground">{translations.home.hero.empower}</span>
+				</h1>
+				<p class="text-xl md:text-2xl font-bold mb-8 leading-relaxed">
+					{translations.home.hero.subtitle}
+				</p>
+				<p class="text-lg mb-12 font-medium text-muted-foreground max-w-3xl mx-auto">
+					{translations.home.hero.description}
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a
+						href="/products"
+						class="neo-button bg-primary text-white px-8 py-4 font-black text-lg uppercase text-center"
+					>
+						{translations.home.hero.explorePlatforms}
+					</a>
+					<a
+						href="/blog"
+						class="neo-button bg-secondary text-black px-8 py-4 font-black text-lg uppercase text-center"
+					>
+						{translations.home.hero.readStory}
+					</a>
 				</div>
 			</div>
 		</div>
@@ -76,112 +66,58 @@
 		<div class="h-4 bg-primary border-y-4 border-black"></div>
 	</section>
 
-	<!-- Featured Products Section -->
-	<section class="py-16 px-6 bg-accent">
+	<!-- Value Pillars Section -->
+	<section class="py-20 px-6 bg-primary">
 		<div class="container mx-auto max-w-6xl">
-			<div class="border-4 border-black bg-white p-2 inline-block mb-12">
-				<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">{translations.home.featuredProducts.title}</h2>
-			</div>
-
-			<div class="grid md:grid-cols-3 gap-8">
-				<!-- Product Card 1 -->
-				<div class="neo-card bg-white p-0 overflow-hidden">
-					<div class="bg-primary border-b-4 border-black p-6 flex items-center justify-center h-32">
-						<span class="text-6xl">⚙️</span>
-					</div>
-					<div class="p-6">
-						<div class="border-4 border-black bg-secondary inline-block px-3 py-1 mb-3">
-							<span class="font-black text-sm uppercase">{translations.home.featuredProducts.accessAI}</span>
-						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.featuredProducts.communiLink}</h3>
-						<p class="font-medium mb-4">
-							{translations.home.featuredProducts.description1}
-						</p>
-					</div>
-				</div>
-
-				<!-- Product Card 2 -->
-				<div class="neo-card bg-white p-0 overflow-hidden">
-					<div class="bg-secondary border-b-4 border-black p-6 flex items-center justify-center h-32">
-						<span class="text-6xl">💬</span>
-					</div>
-					<div class="p-6">
-						<div class="border-4 border-black bg-primary text-white inline-block px-3 py-1 mb-3">
-							<span class="font-black text-sm uppercase">{translations.home.featuredProducts.accessAI}</span>
-						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.featuredProducts.communiLink}</h3>
-						<p class="font-medium mb-4">
-							{translations.home.featuredProducts.description2}
-						</p>
-					</div>
-				</div>
-
-				<!-- Product Card 3 -->
-				<div class="neo-card bg-white p-0 overflow-hidden">
-					<div class="bg-white border-b-4 border-black p-6 flex items-center justify-center h-32">
-						<img src="/Logov3_small.jpg" alt="Product" class="h-20 w-auto border-4 border-black" />
-					</div>
-					<div class="p-6">
-						<div class="border-4 border-black bg-accent text-white inline-block px-3 py-1 mb-3">
-							<span class="font-black text-sm uppercase">{translations.home.featuredProducts.comingSoon}</span>
-						</div>
-						<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.featuredProducts.moreProducts}</h3>
-						<p class="font-medium mb-4">
-							{translations.home.featuredProducts.moreDescription}
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Decorative stripe -->
-	<div class="h-4 bg-secondary border-y-4 border-black"></div>
-	<!-- Decorative stripe -->
-	<div class="h-4 bg-secondary border-y-4 border-black"></div>
-
-	<!-- Our Mission Section -->
-	<section class="py-16 px-6 bg-white">
-		<div class="container mx-auto max-w-6xl">
-			<div class="border-4 border-black bg-primary text-white p-2 inline-block mb-12">
-				<h2 class="text-4xl md:text-5xl font-black uppercase px-4 py-2">{translations.home.mission.title}</h2>
-			</div>
-
-			<div class="grid md:grid-cols-3 gap-8">
-				<!-- Mission 1 -->
-				<div class="neo-card bg-secondary p-8">
-					<div class="text-5xl mb-4">🌍</div>
-					<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.mission.inclusive}</h3>
-					<p class="font-medium">
-						{translations.home.mission.inclusiveDesc}
-					</p>
-				</div>
-
-				<!-- Mission 2 -->
+			<div class="grid md:grid-cols-2 gap-8">
+				<!-- Pillar 1: Information & Strategy -->
 				<div class="neo-card bg-white p-8">
-					<div class="text-5xl mb-4">⚡</div>
-					<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.mission.fast}</h3>
-					<p class="font-medium">
-						{translations.home.mission.fastDesc}
-					</p>
+					<div class="border-4 border-black bg-primary text-white inline-block px-3 py-1 mb-4">
+						<span class="font-black text-sm uppercase">{translations.home.pillars.info.badge}</span>
+					</div>
+					<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.pillars.info.heading}</h3>
+					<p class="font-black text-primary mb-3">{translations.home.pillars.info.lead}</p>
+					<p class="font-medium">{translations.home.pillars.info.body}</p>
 				</div>
 
-				<!-- Mission 3 -->
-				<div class="neo-card bg-accent text-white p-8">
-					<div class="text-5xl mb-4">🚀</div>
-					<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.mission.scalable}</h3>
-					<p class="font-medium">
-						{translations.home.mission.scalableDesc}
-					</p>
+				<!-- Pillar 2: Interoperability -->
+				<div class="neo-card bg-secondary p-8">
+					<div class="border-4 border-black bg-accent text-white inline-block px-3 py-1 mb-4">
+						<span class="font-black text-sm uppercase">{translations.home.pillars.interop.badge}</span>
+					</div>
+					<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.pillars.interop.heading}</h3>
+					<p class="font-black text-accent mb-3">{translations.home.pillars.interop.lead}</p>
+					<p class="font-medium">{translations.home.pillars.interop.body}</p>
+				</div>
+
+				<!-- Pillar 3: Digital Transformation -->
+				<div class="neo-card bg-accent p-8">
+					<div class="border-4 border-black bg-secondary inline-block px-3 py-1 mb-4">
+						<span class="font-black text-sm uppercase">{translations.home.pillars.transformation.badge}</span>
+					</div>
+					<h3 class="text-2xl font-black mb-3 uppercase text-white">{translations.home.pillars.transformation.heading}</h3>
+					<p class="font-black text-white mb-3">{translations.home.pillars.transformation.lead}</p>
+					<p class="font-medium text-white">{translations.home.pillars.transformation.body}</p>
+				</div>
+
+				<!-- Pillar 4: Automation -->
+			<div class="neo-card bg-red-400 text-white p-8">
+				<div class="border-4 border-black bg-white inline-block px-3 py-1 mb-4">
+					<span class="font-black text-sm uppercase text-red-600">{translations.home.pillars.automation.badge}</span>
+				</div>
+				<h3 class="text-2xl font-black mb-3 uppercase">{translations.home.pillars.automation.heading}</h3>
+				<p class="font-black text-white mb-3">{translations.home.pillars.automation.lead}</p>
+					<p class="font-medium">{translations.home.pillars.automation.body}</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Products Preview - Removed as it duplicates Featured Products -->
+	<!-- Decorative stripe -->
+	<div class="h-4 bg-secondary border-y-4 border-black"></div>
 
 	<!-- Blog Preview -->
-	<section class="py-16 px-6 bg-primary">
+	<section class="py-16 px-6 bg-secondary">
 		<div class="container mx-auto max-w-6xl">
 			<div class="flex items-center justify-between mb-12 flex-wrap gap-4">
 				<div class="border-4 border-black bg-white p-2">
